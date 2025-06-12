@@ -6,7 +6,7 @@ import { FaChevronLeft } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <div className="bg-zinc-100 w-full relative">
-      <div className="w-full max-w-[1400px] m-auto  px-8 py-4">
+      <div className="w-full max-w-[1600px] m-auto  px-8 py-4">
         <button className="bg-white rounded-full px-6 py-3 flex items-center gap-2 hover:bg-zinc-200 transition-all duration-200 hover:gap-4">
           <FaChevronLeft />
           Continue Shopping
