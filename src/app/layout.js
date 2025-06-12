@@ -11,9 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-zinc-100">
         <Navbar />
-        <div className="w-full max-w-[1600px] m-auto px-10 py-8">
-          {children}
-        </div>
+        <div className="w-full max-w-[1600px] m-auto  py-8">{children}</div>
       </body>
     </html>
   );

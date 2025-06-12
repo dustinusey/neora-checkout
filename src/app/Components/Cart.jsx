@@ -7,7 +7,7 @@ import Accordion from "./Accordion";
 const Cart = () => {
   const { todaysCart, edgeCart, nextMonthsCart } = useContext(AppState);
   return (
-    <div className="ml-auto text-zinc-800">
+    <div className="ml-auto text-zinc-800 w-full lg:w-[500px]">
       <div className="mb-5 rounded-xl flex items-center gap-2 justify-between py-4 px-8 bg-white ">
         <div>
           <p>Your cart is ready to share!</p>

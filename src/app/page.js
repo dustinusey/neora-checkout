@@ -87,7 +87,7 @@ const nextMonthsCart = {
 
 const page = () => {
   return (
-    <div className="flex flex-wrap gap-3 w-full  justify-start items-start m-auto px-8 ">
+    <div className="flex flex-wrap lg:flex-nowrap gap-6 w-full justify-start items-start m-auto px-8 ">
       <AppState.Provider value={{ todaysCart, edgeCart, nextMonthsCart }}>
         <Checkout />
         <Cart />
