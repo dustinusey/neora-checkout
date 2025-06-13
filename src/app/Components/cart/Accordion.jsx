@@ -14,7 +14,7 @@ const Accordion = ({ title, data, cartToggleStatus }) => {
         onClick={() => {
           setCartToggle(!cartToggle);
         }}
-        className="flex justify-between items-center gap-2 rounded-xl bg-zinc-200/50 py-3 px-5 cursor-pointer hover:bg-zinc-200 duration-200"
+        className="flex justify-between items-center gap-2 rounded-xl bg-zinc-100 py-3 px-5 cursor-pointer hover:bg-zinc-200 duration-200 "
       >
         <p className="cart-title">{title} </p>
         {cartToggle ? <FaChevronDown /> : <FaChevronRight />}

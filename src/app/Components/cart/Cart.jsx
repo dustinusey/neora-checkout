@@ -1,13 +1,14 @@
 "use client";
 import { useContext, useState } from "react";
 import { FaShare } from "react-icons/fa";
-import { AppState } from "../page";
+import { AppState } from "../../page";
 import Accordion from "./Accordion";
 
 const Cart = () => {
   const { todaysCart, edgeCart, nextMonthsCart } = useContext(AppState);
   return (
-    <div className="ml-auto text-zinc-800 w-full lg:w-[500px]">
+    <div className="ml-auto text-zinc-800 w-full lg:w-[500px] p-6 min-w-[500px]  lg:h-screen overflow-y-auto">
+      {/* share cart */}
       <div className="mb-5 rounded-xl flex items-center gap-2 justify-between py-4 px-8 bg-white ">
         <div>
           <p>Your cart is ready to share!</p>
@@ -19,7 +20,8 @@ const Cart = () => {
           <FaShare />
         </button>
       </div>
-      <div className="min-w-[500px] bg-white p-6 rounded-xl ml-auto text-zinc-800 space-y-6">
+
+      <div className=" bg-white p-6 rounded-xl ml-auto text-zinc-800 space-y-6">
         {/* share callout */}
 
         {/* todays cart */}

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { createContext } from "react";
-import Cart from "./Components/Cart";
-import Checkout from "./Components/Checkout";
+import Cart from "./Components/cart/Cart";
+import Checkout from "./Components/checkout/Checkout";
 
 export const AppState = createContext();
 
@@ -87,7 +87,7 @@ const nextMonthsCart = {
 
 const page = () => {
   return (
-    <div className="flex flex-wrap lg:flex-nowrap gap-6 w-full justify-start items-start m-auto px-8 ">
+    <div className="flex flex-wrap lg:flex-nowrap w-full justify-start items-start m-auto max-w-[1400px]">
       <AppState.Provider value={{ todaysCart, edgeCart, nextMonthsCart }}>
         <Checkout />
         <Cart />
